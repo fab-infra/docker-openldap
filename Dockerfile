@@ -8,7 +8,7 @@ ENV OPENLDAP_ROOT_DN="cn=root,dc=localhost"
 ENV OPENLDAP_ROOT_PASSWORD="secret"
 
 # OpenLDAP
-RUN zypper in -y openldap2 &&\
+RUN zypper in -y openldap2 openldap2-client &&\
 	zypper clean -a
 
 # Files

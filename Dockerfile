@@ -1,5 +1,5 @@
-# OpeNLDAP server based on openSUSE Leap 15
-FROM fcrespel/base-image:opensuse15
+# OpeNLDAP server based on openSUSE Leap 15.2
+FROM fcrespel/base-image:opensuse15.2
 
 # Environment
 ENV OPENLDAP_DB_BACKEND="mdb"

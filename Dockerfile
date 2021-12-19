@@ -1,5 +1,5 @@
-# OpeNLDAP server based on openSUSE Leap 15.2
-FROM ghcr.io/fab-infra/base-image:opensuse15.2
+# OpeNLDAP server based on openSUSE Leap 15.3
+FROM ghcr.io/fab-infra/base-image:opensuse15.3
 
 # Environment
 ENV OPENLDAP_DB_BACKEND="mdb" \

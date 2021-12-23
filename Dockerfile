@@ -14,8 +14,7 @@ RUN zypper in -y openldap2 openldap2-client &&\
 
 # Files
 COPY ./root /
-RUN chmod +x /run.sh &&\
-	chmod a+rw /etc/passwd /etc/group &&\
+RUN chmod a+rw /etc/passwd /etc/group &&\
 	mkdir -p /var/run/slapd &&\
 	confd -onetime -backend env &&\
 	chmod -R a+rwX /etc/openldap /var/lib/ldap /var/run/slapd

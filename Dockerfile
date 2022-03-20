@@ -3,9 +3,9 @@ FROM ghcr.io/fab-infra/base-image:opensuse15.3
 
 # Environment
 ENV OPENLDAP_DB_BACKEND="mdb" \
-    OPENLDAP_DB_SUFFIX="dc=localhost" \
-    OPENLDAP_ROOT_DN="cn=root,dc=localhost" \
-    OPENLDAP_ROOT_PASSWORD="secret" \
+	OPENLDAP_DB_SUFFIX="dc=localhost" \
+	OPENLDAP_ROOT_DN="cn=root,dc=localhost" \
+	OPENLDAP_ROOT_PASSWORD="secret" \
 	OPENLDAP_INIT_FILE="/var/lib/ldap/init.ldif"
 
 # OpenLDAP

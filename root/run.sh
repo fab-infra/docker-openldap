@@ -16,4 +16,4 @@ else
 fi
 
 # Start OpenLDAP
-exec /usr/lib/openldap/start
+exec /usr/sbin/slapd -h ldap://0.0.0.0:1389 -f /etc/openldap/slapd.conf -d 256

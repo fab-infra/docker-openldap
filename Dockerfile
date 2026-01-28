@@ -1,5 +1,5 @@
-# OpeNLDAP server based on openSUSE Leap 15.6
-FROM ghcr.io/fab-infra/base-image:opensuse15.6
+# OpenLDAP server based on openSUSE Leap 16.0
+FROM ghcr.io/fab-infra/base-image:opensuse16.0
 
 # Environment
 ENV OPENLDAP_DB_BACKEND="mdb" \
@@ -9,7 +9,7 @@ ENV OPENLDAP_DB_BACKEND="mdb" \
 	OPENLDAP_INIT_FILE="/var/lib/ldap/init.ldif"
 
 # OpenLDAP
-RUN zypper in -y openldap2 openldap2-client &&\
+RUN zypper in -y openldap2_6 openldap2_6-client &&\
 	zypper clean -a
 
 # Files
